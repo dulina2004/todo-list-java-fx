@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="988.0" style="-fx-background-color: #130f40;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.MainFormController">
+   <children>
+      <JFXButton fx:id="btnAdd" alignment="TOP_LEFT" layoutX="45.0" layoutY="511.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="255.0" style="-fx-background-color: #ebebeb;" text="+   Add Task" />
+      <JFXListView fx:id="listView" layoutX="45.0" layoutY="75.0" prefHeight="393.0" prefWidth="248.0" />
+      <Label layoutX="39.0" layoutY="29.0" prefHeight="38.0" prefWidth="169.0" text="ToDo :" textFill="#eaeaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="310.0" layoutY="12.0" prefHeight="579.0" prefWidth="382.0" style="-fx-background-color: #95a5a6;">
+         <children>
+            <JFXTextField fx:id="txtTitleView" layoutX="31.0" layoutY="84.0" prefHeight="25.0" prefWidth="331.0" />
+            <JFXTextArea fx:id="TxtDescriptionView" layoutX="31.0" layoutY="127.0" prefHeight="185.0" prefWidth="331.0" />
+            <DatePicker fx:id="dateView" layoutX="31.0" layoutY="356.0" prefHeight="25.0" prefWidth="241.0" />
+            <JFXButton fx:id="btnCompleted" layoutX="31.0" layoutY="415.0" onAction="#btnCompletedOnAction" prefHeight="33.0" prefWidth="176.0" style="-fx-background-color: #2ecc71;" text="Task Completed">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <JFXListView fx:id="listViewC" layoutX="716.0" layoutY="75.0" prefHeight="393.0" prefWidth="248.0" />
+      <Label layoutX="710.0" layoutY="29.0" prefHeight="38.0" prefWidth="169.0" text="Completed :" textFill="#eaeaea">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReload" layoutX="45.0" layoutY="544.0" onAction="#btnReloadOnAction" prefHeight="33.0" prefWidth="176.0" style="-fx-background-color: #16a085;" text="Reload">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
